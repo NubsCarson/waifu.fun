@@ -25,8 +25,7 @@ export default function StepLaunchpad() {
 				feeConfig: DEFAULT_FLAP,
 			});
 		}
-		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, []);
+	}, [selectedId, feeConfig, patchLaunchpad]);
 
 	const handleSelect = (descriptor: LaunchpadDescriptor) => {
 		// switch fee config to the picked launchpad's default if the kind shifts.
